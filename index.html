@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="css/Home.css">
+    <link rel="stylesheet" href="css/About.css">
+    <link rel="stylesheet" href="css/Project.css">
+    <link rel="stylesheet" href="css/Skills.css">
+    <link rel="stylesheet" href="css/Contact.css">
+    <link rel="stylesheet" href="css/Footer.css">
+    <link rel="stylesheet" href="css/MediaQueries.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!--====== For Navagation ======-->
+    <nav class="navigation">
+
+        <div class="navLogo">
+            <p id="fontLogo">Jm WebDev<></p>
+        </div>
+      
+        <div class="navLinks">
+            <a class="nav_link active-link" href="#home-Container" style="--i:1" id="home">Home</a> 
+            <a class="nav_link" href="#about-container" style="--i:2">About</a> 
+            <a class="nav_link" href="#skill-Container" style="--i:3">Skill</a> 
+            <a class="nav_link" href="#project-container" style="--i:4">Project</a> 
+            <a class="nav_link" href="#contact-Container" style="--i:5">Contact</a> 
+        </div>
+
+    </nav>
+
+
+    <!--====== For Home Content ======-->
+    <section id="home-Container">
+        <div class="name-Container">
+            <div class="forName">
+                <h1 id="greet"></h1>
+                <h1 id="name"></h1>
+                <p  id="description">And I'm a <span class="multi-text"></span></p>  
+                <p  id="tagline"></p> 
+                <p  id="anotherTagline"></p>
+                
+                <div class="iconContainer">
+                    <a style="--i:6" href="https://www.facebook.com/jm.morallos.35"><i class='bx bxl-facebook'></i></a>
+                    <a style="--i:7" href="https://www.tiktok.com/@jmwebdev"><i class='bx bxl-tiktok'></i></a>
+                    <a style="--i:8" href="mailto:jmmorallos0@gmail.com"><i class='bx bxl-gmail'></i></i></a>
+                    <a style="--i:9" href="https://www.linkedin.com/in/jm-morallos-b100b127a/"><i class='bx bxl-linkedin'></i></a>
+                </div>
+                <button id="downloadCV">Download CV</button>
+            </div>
+        </div>
+
+        <div class="third-Container">
+            <img src="src/jm.png" alt="error">
+        </div>    
+    </section>
+
+
+
+    <!--====== For About Content ======-->
+    <section id="about-container">
+       <div class="about-image-container" >
+           <img src="src/aboutImage.png" alt="image" class="about-image">
+       </div>
+       <div class="about-me-container">
+           <h1><span>About</span> me</h1>
+           <p id="details">
+               
+           </p>
+       </div>
+    </section>
+
+
+
+
+    <!--====== For Skill Content ======-->
+    <section id="skill-Container">
+        <h1>My <span>Skills</span></h1>
+    
+        <div class="skills">
+            <div>
+                <i class='bx bxl-html5'></i>
+            </div>
+            
+            <div>
+                <i class='bx bxl-css3' ></i>
+            </div>
+            
+            <div>
+                <i class='bx bxl-javascript'></i>
+            </div>
+        </div>
+        
+        <div class="skills-2">
+            <div>
+                <i class='bx bxl-react' ></i>
+            </div>
+            
+            <div>
+                <i class='bx bxl-nodejs' ></i>
+            </div>
+        </div>    
+        
+    </section>
+
+
+
+    <!--====== For Project Content ======-->
+    <section id="project-container">
+        <div class="project-font">
+            <h1>My <span>Projects</span></h1>
+        </div>  
+
+        <div class="project-images">
+            <div id="projects1">
+                <img src="src/Netflix Clone.png" alt="image">
+                <h2>Netflix Clone</h2>
+                <p id="project-desc1" ></p>
+            </div>
+    
+            <div id="projects2">
+                <img src="src/LMS.png" alt="image" id="project2-img">
+                <h2 id="project2H2">Library Management System </h2>
+                <p id="project-desc2"></p>
+            </div>
+    
+            <div id="projects3">
+                <img src="src/Youtube Clone.png" alt="image">
+                <h2>Youtube Clone</h2>
+                <p id="project-desc3"></p>
+            </div>
+        </div>   
+    </section>
+
+
+
+
+    <!--====== For Contact Content ======-->
+    <section id="contact-Container">
+        <div class="contact-details">
+            <div class="contact-Intro">
+                <h1>Let's <span>Talk.</span></h1>
+                <h5>Do you speak Tagalog? It's ok if you don't ,</h5>
+                <h5>I can speak English too.</h5>
+                <h2>Connect With Us :</h2>
+            </div>
+            
+
+            <div class="contact-Icon">
+                <a href="https://www.facebook.com/jm.morallos.35"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.tiktok.com/@jmwebdev"><i class='bx bxl-tiktok'></i></a>
+                <a href="mailto:jmmorallos0@gmail.com"><i class='bx bxl-gmail'></i></a>
+                <a href="https://www.linkedin.com/in/jm-morallos-b100b127a/"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+        </div>
+        <div class="contact-image">
+            <img src="src/contact-image.png" alt="image">
+        </div>
+    </section>
+
+
+
+    <!--====== For Contact Content ======-->
+    <div class="footer-container">
+        <span>Jm WebDev</span>
+        <i class='bx bx-copyright'></i>
+        <span>2024</span>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

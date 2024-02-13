@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,700;1,200;1,600&display=swap');
+
+:root{
+    --main-color:#0ef;
+    --secondary-color:#fff;
+    --third-color:#1f232d;
+}
+
+#skill-Container{
+    width: 75%;
+    height: 70vh;
+    padding: 50px 90px 90px;
+}
+
+#skill-Container > h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.3em;
+    font-family: 'Poppins', sans-serif;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+#skill-Container > h1 span{
+    color: var(--main-color);
+}
+
+.skills,
+.skills-2 {
+    height: 40%;
+    padding: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 80px;
+}
+
+.skills > div,
+.skills-2 > div{
+    background: transparent;
+    border-radius: 20px;
+    border: 1px solid var(--main-color);
+    width: 20%; 
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px 0px rgba(0,238,255,1) inset,
+    0px 3px 15px 0px rgba(0,238,255,1) inset;
+    transition: 0.2s;
+}
+
+.skills > div:hover,
+.skills-2 > div:hover {
+    transform: scale(1.1);
+}
+
+.skills > div > i,
+.skills-2 > div > i {
+    font-size: 8.5rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.bx.bxl-html5{
+    color: hsl(16, 100%, 60%);
+}
+
+.bx.bxl-css3{
+    color:  hsl(228, 78%, 52%);
+}
+
+.bx.bxl-javascript{
+    color: hsl(60, 100%, 45%);
+}
+
+.bx.bxl-react{
+    color: hsl(192, 95%, 68%);
+}
+
+.bx.bxl-nodejs{
+    color: #68a063;
+}

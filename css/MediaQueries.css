@@ -1,0 +1,376 @@
+@media only screen and (max-width:1281px) { 
+    .skills > div > i,
+    .skills-2 > div > i {
+        font-size: 7.5rem;
+    }
+
+    .project-images{
+        grid-template-rows: minmax(200px, 320px);
+        padding: 80px;
+    }
+
+    
+    .project-images > div > img {
+        max-width: 92%;
+    }
+
+    .project-images > div > h2{
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+
+    .contact-image > img{
+        max-width: 350px;
+    }
+
+    .contact-Icon > a{
+        font-size: 1.5rem;
+
+    }   
+    
+    .contact-Intro > h2{
+        font-size: 1.7rem;
+    }
+
+    .contact-Intro > h5{
+        font-size: 1.3rem;
+    }
+
+    .contact-Intro > h1{
+        font-size: 2.3em;
+    }
+
+    .about-image-container > img{
+        width: 350px;
+    }
+
+    .about-me-container > h1{
+        font-size: 2.2rem;
+    }
+
+    .about-me-container{
+        padding: 30px 60px;  
+    }
+    
+    .about-me-container > p{
+        font-size: 1.2rem;
+    }
+
+    .third-Container > img{
+        width: 350px;
+    }
+
+    #greet, #description{
+        font-size: 1.8rem;
+    }
+    
+    #name{
+        font-size: 2.3rem;
+    }   
+}
+
+@media only screen and (max-width:1025px) { 
+    #greet, #description{
+        font-size: 1.8rem;
+    }
+    
+    #name{
+        font-size: 2.1rem;
+    } 
+
+    #downloadCV{
+        padding: 12px 23px;
+        font-size: 1.2rem;
+    }
+
+    .third-Container > img{
+        width: 370px;
+    }
+
+    .about-image-container > img{
+        width: 320px;
+    }
+
+    .about-me-container > h1{
+        font-size: 2.1rem;
+    }
+
+    .about-me-container{
+        padding: 24px 35px;  
+    }
+    
+    .about-me-container > p{
+        font-size: 1.2rem;
+    }
+
+    .skills > div,
+    .skills-2 > div{
+        width: 25%; 
+    }
+
+    .skills > div > i,
+    .skills-2 > div > i {
+        font-size: 7rem;
+    }
+
+    .project-images > div{
+        padding: 5%;
+    }
+
+    .project-images{
+        grid-template-rows: minmax(200px, 350px);
+        padding: 80px;
+    }
+    
+    .contact-image > img{
+        max-width: 320px;
+    }
+
+    .contact-Icon > a{
+        font-size: 1.4rem;
+
+    }   
+    
+    .contact-Intro > h2{
+        font-size: 1.6rem;
+    }
+
+    .contact-Intro > h5{
+        font-size: 1.2rem;
+    }
+
+    .contact-Intro > h1{
+        font-size: 2.1em;
+    }
+
+    .footer-container{
+        width: 100%;
+        height: 8vh;
+    }
+
+    .footer-container > span,
+    .footer-container > i{
+        font-size: 0.9rem;
+    }
+
+    .navLinks > a{
+        font-size: 1.2rem;
+        padding: 13px;
+    }
+
+    #fontLogo{
+        font-size: 1.1rem;
+    }
+
+    .navigation{
+        height: 55px;
+    }
+}
+
+@media only screen and (max-width:801px)  { 
+    #greet, #description{
+        font-size: 1.6rem;
+    }
+    
+    #name{
+        font-size: 1.9rem;
+    } 
+
+    #downloadCV{
+        padding: 12px 23px;
+        font-size: 1.2rem;
+    }
+
+    .third-Container > img{
+        width: 340px;
+    }
+
+    .about-image-container > img{
+        width: 300px;
+    }
+
+    .about-me-container > h1{
+        font-size: 2.0rem;
+    }
+
+    .about-me-container{
+        padding: 24px 20px;  
+    }
+    
+    .about-me-container > p{
+        font-size: 1.1rem;
+    }
+
+    .skills {
+        gap: 40px;
+    }
+
+    .skills > div,
+    .skills-2 > div{
+        width: 30%; 
+    }
+
+    .project-images{
+        grid-template-columns: 80%;
+        grid-template-rows: minmax(200px, 350px);
+        padding: 20px 70px;
+        grid-gap: 5em;
+        column-gap: 10px ;
+        place-content: center;
+    }
+
+    .project-images > div{
+        padding: 5%;
+    }
+
+    
+    .contact-image > img{
+        max-width: 290px;
+    }
+
+    .contact-Icon > a{
+        font-size: 1.2rem;
+    }   
+    
+    .contact-Intro > h2{
+        font-size: 1.3rem;
+    }
+
+    .contact-Intro > h5{
+        font-size: 1rem;
+    }
+
+    .contact-Intro > h1{
+        font-size: 2.1em;
+    }
+
+    .footer-container{
+        width: 100%;
+        height: 8vh;
+    }
+
+    .navLinks > a{
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+    #fontLogo{
+        font-size: 0.9rem;
+    }
+}
+
+
+@media only screen and (max-width:800px){
+    #fontLogo{
+        font-size: 0.8rem;
+    }
+
+    #fontLogo::first-letter{
+        font-size: 1.6em;
+    }
+
+    .navLinks > a{
+        font-size: 1.1rem;
+    }
+    
+    .iconContainer > a{
+        font-size: 1.4rem;
+    }
+
+    #downloadCV{
+        padding: 10px 21px;
+        font-size: 1.2rem;
+    }
+
+    .third-Container > img{
+        width: 315px;
+    }
+
+    #greet, #description{
+        font-size: 1.4rem;
+    }
+
+    #name{
+        font-size: 1.8rem;
+    } 
+
+    .about-image-container > img{
+        width: 285px;
+    } 
+
+    .about-me-container{
+        padding: 20px 15px;  
+    }
+
+    #skill-Container > h1{
+        font-size: 2.2rem;
+    }
+
+    .skills {
+        gap: 20px;
+    }
+
+    .skills-2{
+        gap: 25px;
+    }
+
+    .skills > div,
+    .skills-2 > div{
+        width: 35%; 
+    }
+    
+    .project-images{
+        grid-template-columns: 80%;
+        grid-template-rows: minmax(200px, 330px);
+        padding: 20px 100px;
+        grid-gap: 5em;
+        column-gap: 10px ;
+        place-content: center;
+    }
+    
+    .project-font > h1 {
+        font-size: 2.2em;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+
+    .project-images > div > img {
+        max-width: 95%;
+        border-radius: 10px;
+    }
+
+    #contact-Container{
+        grid-template-rows: 98% 100%;
+        margin-top: 55% ;
+    }
+
+    .contact-Icon{
+        width: 55%;
+    }
+ 
+    .contact-Icon > a{
+        font-size: 1.2rem;
+    }  
+
+    .contact-image > img{
+        max-width: 290px;
+    }
+
+    .footer-container{
+        width: 100%;
+        height: 8vh;
+        background-color: hsl(223, 18%, 17%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .footer-container > span,
+    .footer-container > i{
+        color: gray;
+        font-size: 0.8rem;
+    }
+}
+

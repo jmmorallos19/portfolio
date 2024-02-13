@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,700;1,200;1,600&display=swap');
+
+:root{
+    --main-color:#0ef;
+    --secondary-color:#fff;
+    --third-color:#1f232d;
+}
+
+#project-container{
+    width: 99%;
+    height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px ;
+    margin-bottom: 15dvh;
+}
+
+.project-font{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.project-font > h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.3em;
+    font-family: 'Poppins', sans-serif;
+    color: var(--secondary-color);
+    cursor: pointer;
+    margin: 0;
+}
+
+.project-font > h1 span {
+    color: var(--main-color);
+}
+
+.project-images{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 8em;
+    padding: 90px 110px;
+    padding-top: 80px;
+}
+
+.project-images > div {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+    transition: 0.5 s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 40px 0px rgba(0,238,255,1),
+    0px 3px 25px 0px rgba(0,238,255,1);
+    transition: 0.2s;
+}
+
+.project-images > div:hover{
+    transform: scale(1.1);
+    font-size: 2rem;
+}
+
+.project-images > div > img {
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+.project-images > div > h2{
+    text-align: center;
+    color: var(--main-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.project-images > div > p {
+    color: var(--secondary-color);
+    text-align: justify;
+    font-weight: 400;
+    font-size: 1.2rem;
+    word-spacing: 0;
+    transition: 0.2s;
+    margin: 7px;
+    display: none;
+}

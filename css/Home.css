@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,600;1,600&display=swap');
+:root{
+    --main-color:#0ef;
+    --secondary-color:#fff;
+    --third-color:#1f232d;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 25px;
+    margin: 0;
+    background-color: var(--third-color);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navigation{
+    width: 100%;
+    height:60px;
+    box-shadow: -1px 6px 31px -11px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 6px 31px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 6px 31px -11px rgba(0,0,0,0.75);
+    padding: 10px 15px;
+    background-color: var(--third-color);
+    position:fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: 1;
+}
+
+
+#fontLogo{
+    display: inline-block;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 17%;
+    animation: slideRight 1s ease forwards;
+}
+
+#fontLogo::first-letter{
+    font-size: 1.8rem;
+    color:var(--main-color);
+}
+
+.navLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLinks > a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: 15px;
+    border-radius: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.1s * var(--i));
+}
+
+
+a:hover{
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}  
+
+.active-link{
+    border-bottom: 2px solid var(--main-color);
+}
+
+
+#home-Container{
+    width: 99%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 80px;
+}
+
+.name-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#greet, #name, #description{
+    color: var(--secondary-color);
+    margin: 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#greet{
+    font-size: 2rem;
+    animation: slideTop 2s ease forwards;
+}
+
+#name{
+    font-size: 2.5rem;
+    animation: slideLeft 2s ease forwards;
+}
+
+#description{
+    font-size: 2rem;
+    animation: slideBottom 2s ease forwards;
+}
+
+#description span{
+    color: var(--main-color);
+}
+
+#tagline, #anotherTagline{
+    color: var(--secondary-color);
+    font-weight: 200;
+    animation: slideBottom 2s ease forwards;
+}
+
+#tagline{
+    margin-bottom: 0;
+}
+
+#anotherTagline{
+    margin-top: 0px;
+}
+
+
+.iconContainer{
+    margin: 15px 0 10px;
+}
+
+.iconContainer > a{
+    font-size: 1.5rem;
+    color: #0ef;
+    border: 1px solid var(--main-color);
+    padding: 5px 8px 1px;
+    border-radius: 100px;
+    margin-right: 10px;
+    transition: 0.2s;
+    opacity: 0;
+    font-weight: 200;
+    animation: slideRight 2s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.iconContainer > a:hover{
+    background-color: var(--main-color);
+    color: var(--third-color);
+}
+
+#downloadCV{
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: 1px solid var(--main-color);
+    transition: 0.2s;
+    animation: slideBottom 2s ease forwards;
+    animation-delay: .2s;
+    color: var(--main-color);
+    background: none;
+}
+
+#downloadCV:hover{
+    background-color: var(--main-color);
+    color: var(--third-color);
+}
+
+#downloadCV:active{
+    filter: brightness(120%);
+}
+
+.third-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.third-Container > img{
+    width: 400px;
+    border: 1px solid var(--main-color);
+    box-shadow: 0px 16px 53px 3px rgba(0,238,255,1),
+    0px -3px 39px -3px rgba(0,238,255,1); 
+    border-radius: 50%;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards;
+    animation-delay: 1s;   
+    cursor: pointer;       
+    filter: drop-shadow(5px 5px 10px #000000); 
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
